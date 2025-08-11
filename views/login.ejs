@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-200 min-h-screen flex items-center justify-center">
+
+    <div class="bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 w-full max-w-md">
+        <h1 class="text-4xl font-extrabold text-center bg-indigo-500 bg-clip-text text-transparent mb-8">
+            User Login
+        </h1>
+
+        <form method="post" action="/login" class="space-y-5">
+            <!-- Email -->
+            <input 
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-4 focus:ring-pink-300 transition-all"
+                type="email" placeholder="Email" name="email" required>
+
+            <!-- Password -->
+            <input 
+                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-4 focus:ring-purple-300 transition-all"
+                type="password" placeholder="Password" name="password" required>
+
+            <!-- Login Button -->
+            <input 
+                class="w-full bg-blue-500 text-white font-bold py-3 rounded-xl shadow-lg cursor-pointer hover:scale-105 hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
+                type="submit" value="Log in">
+
+            <!-- Create account link -->
+            <p class="text-center text-sm text-gray-500">
+                Don't have an account? 
+                <a href="index.ejs" class="text-blue-400 hover:underline font-medium">Create account</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
